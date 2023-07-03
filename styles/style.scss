@@ -1,0 +1,35 @@
+@import './variables';
+@import './header';
+
+hgroup {
+  background: aqua;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}  
+
+h2 { 
+  background-color: $primaryHeader;
+  padding: $primaryHeaderPadding;
+  border-radius: $HeaderBorderRadius;
+  color:$primaryHeaderTextColor;
+}
+
+.button-basic {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-1 {
+  @extend .button-basic;
+  background-color: red;
+}
+
+.button-2 {
+  @extend .button-basic;
+  background-color: green;
+  color: white;
+}

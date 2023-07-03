@@ -1,0 +1,20 @@
+@mixin hoverEffect($color) {
+  background-color: $color;
+  cursor: pointer;
+}
+
+header {
+  h1 {
+    font-size: 50px;
+    margin: 10px;
+    &:hover {
+      @include hoverEffect(coral)
+    }
+  }
+  h2 {
+    margin: 5px;
+    &:hover {
+      @include hoverEffect(black)
+    }
+  }
+}
